@@ -1,0 +1,688 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    display: flex;  
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.section-heading {
+    width: -webkit-fill-available;
+    height: 900px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header-background.jpg) no-repeat;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20.5%;
+    border-bottom: 1px solid #A1A1A1;
+}
+
+.menu-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 3%;
+}
+
+.active-link {
+    width: 8%;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.menu-link:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header-text {
+    margin-top: 220px;
+    margin-right: 20%;
+    margin-left: 20%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header-title-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 50px;
+}
+
+.button {
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+}
+
+.button-primary {
+    background: #4985FF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.radius {
+    border-radius: 30px;
+}
+
+.section-services {
+    width: 60%;
+    margin: auto;
+}
+
+.services {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 110px;
+    margin-bottom: 105px;
+    align-items: center;
+}
+
+.services-title {
+    width: 70%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #323232;
+}
+
+.services-text {
+    width: 62%;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+}
+.services-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+
+.services-info-card {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(../img/service-card-img.svg);
+    background-repeat: no-repeat;
+    margin: 7px;
+}
+
+.services-card-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 60px;
+    margin-bottom: 12px;
+}
+
+.services-card-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+    margin-top: 0;
+    margin-left: 33%;
+}
+
+.section-about-us {
+    padding-top: 100px;
+    height: max-content;
+    background: #F6F6F8;
+}
+
+.about-us {
+    max-width: 60%;
+    margin: auto;
+}
+
+.about-us-container {
+    display: flex;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.about-us-image {
+    width: 500px;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    margin-bottom: 90px;
+}
+
+.about-us-info-text {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #323232;
+    width: 65%;
+}
+
+.about-us-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+    margin: 0;
+    width: 80%;
+}
+
+.about-us-container a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4985FF;
+    margin-top: 30px;
+    margin-bottom: 143px;
+}
+
+.about-us-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.about-us-info-counter {
+    white-space: nowrap;
+    margin-top: 70px;
+}
+
+.about-us-info-counter:not(:last-child) {
+    margin-right: 100px;
+}
+
+.about-us-info-counter-image {
+    margin-right: 20px;
+}
+
+.about-us-info-counter-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.about-us-info-counter-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+    margin-top: 0;
+}
+
+
+
+
+
+/* @media */
+@media (max-width: 1680px) {
+    .section-services {
+        width: 70%;
+    }
+
+    .services-info-card {
+        background-size: 25%;
+    }
+
+    .about-us {
+        max-width: 80%;
+    }
+
+}
+
+
+@media (max-width: 1440px) {
+    .section-services {
+        width: 85%;
+    }
+
+    .about-us {
+        max-width: 85%;
+    }
+
+    .services-info-card {
+        background-size: 25%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-services {
+        width: 95%;
+    }
+
+    .services-info-card {
+        background-size: 25%;
+    }
+
+    .about-us {
+        max-width: 95%;
+    }
+
+    .about-us-title {
+        font-size: 26px;
+        line-height: 35px;
+        margin-left: 5%;
+    }
+
+    .about-us-text {
+        width: 70%;
+        margin-left: 5%;
+    }
+        
+    .about-us-container a {
+        margin-left: 5%;
+    }
+
+    .about-us-image {
+        width: 30%;
+        height: auto;
+        margin-right: 5%;
+    }
+
+    .about-us-info-counter {
+        margin-bottom: 5%;
+    }
+
+    .about-us-info-container {
+        width: 81%;
+    }
+
+    .about-us-info-counter-image {
+        width: 20%;
+    }
+
+    .about-us-info-counter-title {
+        font-size: 25px;
+        line-height: 30px;
+    }    
+
+    .about-us-info-counter-text {
+        font-size: 12px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .services-info-card {
+        background-size: 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-heading {
+        background-position: bottom;
+    }
+
+    .menu-link {
+        font-size: 10px;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .section-services {
+        margin-left: 20%;
+        width: 95%;
+    }
+
+    .services-card-title {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 0px;
+    }
+
+    .services-card-text {
+        margin-left: 50px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 875px) {
+    .section-heading {
+        height: max-content;
+        background-position: bottom;
+    }
+
+    .nav-menu {
+        padding-right: 9.5%;
+    }
+
+    .btn-header {
+        margin-bottom: 15%;
+    }
+
+    .services-title {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .services-text {
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .services-info-card {
+        background-size: 20%;
+    }
+    .services-card-title {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .services-card-text {
+        margin-left: 45px;
+        line-height: 15px;
+        font-size: 10px;
+    }
+
+    .button-primary {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about-us {
+        width: 100%;
+    }
+
+    .about-us-image {
+        display: none;
+    }
+
+    .about-us-info-text {
+        margin-left: 20%;
+        text-align: center;
+    }
+
+    .about-us-title {
+        font-size: 20px;
+    }
+
+    .about-us-text {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .about-us-container a {
+        font-size: 13px;
+        margin-left: 25%;
+    }
+
+    .about-us-info-counter:not(:last-child) {
+        margin-right: 75px;
+    }
+}
+
+@media (max-width: 786px) {
+    .section-heading {
+        width: max-content;
+    }
+
+    .header-title {
+        font-size: 25px;
+    }
+
+    .about-us-info-counter:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    .about-us-container a {
+        margin-left: 25%;
+        margin-bottom: 7%;  
+    }
+
+    counter:not(:last-child) {
+    margin-right: 5%;
+    }
+
+    .about-us-info-counter:not(:last-child) {
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 690px) {
+    .services-info {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .services-info-card {
+        width: 60%;
+    }
+
+    .services-card-title {
+        margin-left: 6%;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .services-card-text {
+        margin-left: 67px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .about-us-info-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .about-us-info-counter {
+        margin-right: 0;
+        white-space: normal;
+        margin-bottom: 5%;
+    }
+
+    .about-us-info-counter:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .about-us-info-counter-title {
+        font-size: 36px;
+        line-height: 53px;
+        margin-bottom: 0;
+    }
+
+    .about-us-info-counter-text {
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    .about-us-info-counter-image {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px){
+    .nav-menu {
+        justify-content: center;
+        padding-right: 0;
+        display: flex;
+    }
+
+    .section-heading {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/header-background-small.jpg) no-repeat;
+    }
+
+    .menu-link {
+        font-size: 16px;
+    }
+
+    .header-text {
+        margin-top: 10%;
+        margin-right: 20%;
+    }
+
+    .header-title-text {
+        font-size: 25px;
+    }
+
+    .header-title {
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .section-services {
+        width: 150%;
+    }
+
+    .services-title {
+        text-align: center;
+        width: 100%;
+    }
+
+    .services-text {
+        width: 70%;
+    }
+
+    .services-info-card {
+        width: 70%;
+        background-size: 25%;
+    }
+
+    .services-card-title {
+        white-space: nowrap;
+        margin-left: 25%;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .services-card-text {
+        margin-left: 31%;
+        line-height: 22px;
+        margin-bottom: 10%;
+        font-size: 15px;
+    }
+
+    .section-about-us {
+        width: 188%;
+    }
+
+    .about-us-info-text {
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-title {
+        font-size: 25px;
+    }
+
+    .about-us-text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .about-us-container a {
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+
+    .services-card-text {
+        margin-left: 31%;
+        line-height: 22px;
+        margin-bottom: 10%;
+        font-size: 15px;
+    }
+
+    .section-about-us {
+        width: 188%;
+    }
+
+    .about-us-info-text {
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-title {
+        font-size: 25px;
+    }
+
+    .about-us-text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .about-us-container a {
+        margin-left: 0;
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-about-us {
+        width: 242%;
+    }
+
+    .section-services {
+        margin-left: 47%;   
+    }
+
+    .services-card-title {
+        margin-left: 43%;
+    }
+}
